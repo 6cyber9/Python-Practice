@@ -197,4 +197,82 @@ if has_good_credit:
     down_payment = 0.1 * price
 else:
     down_payment = 0.2 * price
-print (f'downpayment is ${down_payment}') #Mosh could add $ sign with his method
+print (f'Downpayment: ${down_payment}') #Mosh could add $ sign with his method
+
+#Logical Operators  1:06:37
+#Used when we have multiple conditions
+
+#Example: If applicant has high income and good credit
+# print Eligible for loan.\
+
+#Logical 'AND' condition
+has_high_income = True
+has_good_credit = True #in and condition, both values should be true
+if has_high_income and has_good_credit:
+    print("Eligible for loan 1")
+
+#Logical 'OR' condition
+has_high_income = False
+has_good_credit = True
+if has_high_income or has_good_credit:
+    print("Eligible for loan 2")
+
+#Logical 'NOT' condition
+#If applicant has good credit and doesn't have criminal record
+has_good_credit = True
+has_criminal_record = False
+if has_good_credit and not has_criminal_record:
+    print("Eligible for loan 3")
+
+
+#Comparison Operators 1:11:33
+
+'''
+if temperature is greater than 30 C
+    it's a hot day
+otherwise if it's less than 10 C
+    it's a cold day
+otherwise
+    it's neither hot or cold
+'''
+
+from itertools import count
+
+
+temperature = 30
+if temperature >= 30: # other bulean operators !=, >=, <=, ==
+    print ("it's a hot day")
+else:
+    print("it's not a hot day")
+
+#Exercise
+'''
+if name is less than 3 character long
+    name must be at least 3 characters
+otherwise if it's more than 50 characters long
+    name can be a maximum of 50 characters
+otherwise
+    name looks good!
+'''
+
+#My own Solution (mine is wrong)
+# my choice of using the name input function outputs a larger character length
+name = input ("Input Name ")
+name_character_lenght = len(name)
+if name_character_lenght < 3:
+    print("name must be at least 3 character long")
+elif name_character_lenght > 50:
+    print("name must be a maximum of 50 characters")
+else:
+    print("name is good")
+
+
+#Mosh's Solution
+name = "jk"
+
+if len(name) < 3:
+    print("name must be at least 3 character long")
+elif len(name) > 50:
+    print("name must be a maximum of 50 characters")
+else:
+    print("name is good")
