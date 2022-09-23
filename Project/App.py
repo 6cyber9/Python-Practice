@@ -90,7 +90,7 @@ last = 'Smith'
 msg = f'{first} [{last}] is a Coder' 
 print(msg)
 
-#This program calculates UDL for structures (KN/m^2)
+#This program calculates Dead load for structures (KN/m^2)
 W_in_g=input('What is the total Weight of Member (in gram)? ')
 L_in_m=input('What is the Lenght of Member(in meters? ')
 B_in_m=input('What is the Breadth of Members(in meters)? ')
