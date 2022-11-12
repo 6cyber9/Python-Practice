@@ -1,10 +1,11 @@
-weight = input("Input weight  ")
-unit = input ("Input type (P)lbs or (K)g ")
-K = round(int(weight)*0.45)
-P = round(int(weight)/0.45)
+weight = input("Input weight:  ")
+unit = input ("Choose unit ()lbs or (K)Kg: ")
+K = round(int(weight)/2.205)
+P = round(int(weight)*2.205)
 if unit == 'K':
-    print (f'weight is {P}lbs')
+    print (f' {int(weight)} Kg = {P} lbs')
 elif unit == 'P':
-    print (f'weight is {K}Kg')
+    print (f'{int(weight)} lbs = {K} Kg')
 else:
     print("select (K) or (P)")
+
